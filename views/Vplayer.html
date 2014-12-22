@@ -1,0 +1,96 @@
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="format-detection" content="telephone=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta content="width=device-width, maximum-scale=1.0, user-scalable=0" name="viewport">
+<style>
+body {
+font: 400 12px/1.5 'helvetica neue','hiragino sans gb',arial,tahoma,'Microsoft Yahei',sans-serif;
+}
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+div .btn-play{
+	cursor: pointer;
+width: 56px;
+height: 56px;
+position: absolute;
+left: 50%;
+top: 50%;
+margin: -28px 0 0 -28px;
+border-radius: 60px;
+overflow: hidden;
+border: 2px solid #fff;
+z-index: 4;
+}
+.can-play {
+width: 0;
+height: 0;
+font-size: 0;
+line-height: 0;
+border-width: 15px 15px 15px 22px;
+border-style: dashed dashed dashed solid;
+border-color: transparent transparent transparent #fff;
+position: absolute;
+left: 21px;
+top: 13px;
+}
+.medias-layout {
+background: rgba(23,22,26,.25);
+z-index: 3;
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+
+div {
+display: block;
+}
+
+.description {
+color: white;
+left:0px;
+padding: 2px 8px 5px;
+}
+</style>
+<script src="/static/js/jquery1.6.js">
+</script>
+<script src="/static/js/WXplayer.js">
+</script>
+
+<script>
+
+	$(document).ready(function(){
+		
+  //alert("sss");
+/*************************/
+	$(".cont").click(function(){
+	//alert("sss");
+	window.location.href="/camp?uid="+$(this).attr("id");
+  });
+/*************************/
+     
+});
+</script>
+
+</head>
+<body style="background-color:#2b2931;margin: 0;padding: 0; width: 100%;background-repeat: repeat repeat;" >
+{{range .Data}}
+<div style="position:relative;max-width:640px;width: 100%;margin: 0;text-align: center;" id="{{.Uid}}" class="cont">
+<div data-brackets-id="176" class="medias-layout"></div>
+
+<img src="http://yi-sports-test.qiniudn.com/ETBotO4EOdSL-AjsoFBjNGVQt_0=/Fl19_Z8K1vwN-UuZvP8UYu-ff247" style="top:0px;left:0px;max-width:640px;" width="100%" >
+<!--<span id="detail_play" class="sprite btn-play"></span>-->
+<span data-brackets-id="178" class="btn-play" >
+                    <em  class="can-play"></em>
+</span>
+</div>
+<p class="description br">{{.Name}}</p>
+{{end}}
+</body>

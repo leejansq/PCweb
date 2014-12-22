@@ -1,0 +1,43 @@
+/* CSS Document */
+*{margin:0;padding:0;}
+body {
+	margin:0;
+	background:#fff;
+	font-size:14px;
+}
+body img{border:none; max-width:100%;}
+#layout{ max-width:640px; margin:0 auto; overflow:hidden;}
+
+.top{ height:80px; background:#d13451;padding:0 5%; line-height:80px; text-align:center; font-size:22px; font-weight:bold;color:#fff;}
+.top a.ret{float:left; width:50px; height:80px; display:block; background:url(../images/ret_nor.png) no-repeat center; background-size:auto 50px}
+.top a.ret:hover{ background:url(../images/ret_pre.png) no-repeat center;background-size:auto 50px;}
+.top a.search{float:right;width:50px; height:80px; display:block; background:url(../images/search_nor.png) no-repeat center; background-size:auto 50px}
+.top a.search:hover{ background:url(../images/search_pre.png) no-repeat center;background-size:auto 50px;}
+
+.conter{ position:relative;width:100%;height:900px;background:url(../images/xiaoren.png) no-repeat center;background-size:auto 350px;}
+.conter .img1,.conter .img2,.conter .img3,.conter .img4,.conter .img5,.conter .img6{width:102px; height:160px; text-align:center; color:#666;}
+.conter .img1 img,.conter .img2 img,.conter .img3 img,.conter .img4 img,.conter .img5 img,.conter .img6 img{ width:90px; height:90px;}
+.conter a{color:#666; text-decoration:none;}
+.conter a:hover img{filter:alpha(opacity=70);  /*支持 IE 浏览器*/-moz-opacity:0.70; /*支持 FireFox 浏览器*/opacity:0.70;  /*支持 Chrome, Opera, Safari 等浏览器*/ }
+
+.conter .title{position:absolute; top:5%; left:6%; width:293px; height:82px; background:url(../images/title_txt.png) no-repeat; }
+.conter .img1{position:absolute; bottom:10%; left:45%;}
+.conter .img2{position:absolute; top:32%; left:10%;}
+.conter .img3{position:absolute; top:27%; right:8%;}
+.conter .img4{position:absolute; top:55%; right:10%;}
+.conter .img5{position:absolute; top:16%; right:45%;}
+.conter .img6{position:absolute; bottom:22%; left:8%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
